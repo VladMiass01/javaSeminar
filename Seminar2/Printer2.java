@@ -69,9 +69,9 @@ public class Printer2 {
         int[] arr = {};
         if (args.length == 0) {
             // При отправке кода на Выполнение, вы можете варьировать эти параметры
-            arr = new int[]{9, 4, 8, 3, 1};
+            arr = new int[]{10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
         }
-        else{
+        else {
             arr = Arrays.stream(args[0].split(", "))
                     .mapToInt(Integer::parseInt)
                     .toArray();
