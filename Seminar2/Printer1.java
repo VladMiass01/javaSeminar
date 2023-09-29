@@ -1,4 +1,3 @@
-package HW1;
 /*
 Дана строка sql-запроса:
 select * from students where "
@@ -11,6 +10,7 @@ select * from students where "
 String QUERY - начало SQL-запроса
 String PARAMS - JSON с параметрами
 */
+
 class Answer {
     public static StringBuilder answer(String QUERY, String PARAMS) {
         StringBuilder res = new StringBuilder(QUERY);
@@ -42,7 +42,7 @@ class Answer {
     }
 }
 
-public class Printer {
+public class Printer1 {
     public static void main(String[] args) {
         String QUERY = "";
         String PARAMS = "";

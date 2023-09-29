@@ -15,6 +15,7 @@ sort(arr)
 2023-05-19 07:53 [1, 3, 4, 8, 9]
 2023-05-19 07:53 [1, 3, 4, 8, 9]
 */
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.FileReader;
@@ -63,10 +64,9 @@ class BubbleSort {
     }
 }
 
-public class Printer{
+public class Printer2 {
     public static void main(String[] args) throws IOException {
         int[] arr = {};
-
         if (args.length == 0) {
             // При отправке кода на Выполнение, вы можете варьировать эти параметры
             arr = new int[]{9, 4, 8, 3, 1};
@@ -76,10 +76,8 @@ public class Printer{
                     .mapToInt(Integer::parseInt)
                     .toArray();
         }
-
         BubbleSort ans = new BubbleSort();
         ans.sort(arr);
-
         try (BufferedReader br = new BufferedReader(new FileReader("log.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {
