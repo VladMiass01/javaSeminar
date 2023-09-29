@@ -5,6 +5,7 @@
 При неверно переданном операторе, программа должна вывести сообщение об ошибке "Некорректный оператор:
 'оператор'".
 */
+
 class Calculator {
     public int calculate(char op, int a, int b) {
         switch (op) {
@@ -26,7 +27,7 @@ class Calculator {
     }
 }
 
-public class Printer {
+public class Printer3 {
     public static void main(String[] args) { 
         int a = 0;
         char op = ' ';

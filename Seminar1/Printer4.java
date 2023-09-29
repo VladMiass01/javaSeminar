@@ -58,7 +58,7 @@ class Equation {
     }
 }
 
-public class Printer {
+public class Printer4 {
     public static void main(String[] args) {
         String file = "";
         try {
