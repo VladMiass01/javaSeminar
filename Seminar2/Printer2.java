@@ -53,7 +53,7 @@ class BubbleSort {
     }
 
     static void writeToFile(String line, String filePath) {
-        try (FileWriter writer = new FileWriter(filePath)){
+        try (FileWriter writer = new FileWriter(filePath)) {
             writer.write(line + System.lineSeparator());
             writer.flush();
         }

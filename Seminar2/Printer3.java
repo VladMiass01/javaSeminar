@@ -20,7 +20,7 @@ ELEMENT3 = " по предмету ";
 */
 
 class Answer {
-    public static void answer(String JSON, String ELEMENT1, String ELEMENT2, String ELEMENT3) {
+    public void answer(String JSON, String ELEMENT1, String ELEMENT2, String ELEMENT3) {
         StringBuilder res = new StringBuilder();
         String task = JSON;
         String[] parts = task.split(",");

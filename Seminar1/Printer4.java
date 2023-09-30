@@ -18,7 +18,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 class Equation {
-    static String getSolution(String str) {
+    String getSolution(String str) {
         System.out.println("Given the equation: " + str);
         String[] parts = str.split("\s*[+=]\s*");
         int q = 0, w = 0, e = 0;
