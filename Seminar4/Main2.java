@@ -15,13 +15,13 @@ public class Main2 {
         List<String> list = new LinkedList<>();
         Scanner scan = new Scanner(System.in);
         boolean work = true;
-        while (work){
+        while (work) {
             String line = scan.nextLine();
             String[] parts = line.split("~");
             String text = parts[0];
             String strNum = parts[1];
             int num = Integer.parseInt(strNum);
-            switch (text){
+            switch (text) {
                 case "print":
                     System.out.println(list.remove(num));
                     break;

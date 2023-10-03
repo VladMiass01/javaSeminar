@@ -1,18 +1,19 @@
 /*
 1) Замерьте время, за которое в ArrayList добавятся 10000 элементов.
-2) Замерьте время, за которое в LinkedList добавятся 10000 элементов. Сравните с предыдущим.
+2) Замерьте время, за которое в LinkedList добавятся 10000 элементов.
+Сравните с предыдущим.
 */
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 public class Main1 {
-public static void main(String[] args) {
-        List<Integer> list1 = new ArrayList<>();
-        List<Integer> list2 = new LinkedList<>();
-        System.out.println(testSpeed(list1));
-        System.out.println(testSpeed(list2));
-    }
+    public static void main(String[] args) {
+            List<Integer> list1 = new ArrayList<>();
+            List<Integer> list2 = new LinkedList<>();
+            System.out.println(testSpeed(list1));
+            System.out.println(testSpeed(list2));
+        }
 
     private static long testSpeed(List<Integer> list1) {
         long timeStart1 = System.currentTimeMillis();

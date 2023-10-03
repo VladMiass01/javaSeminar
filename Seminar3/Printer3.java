@@ -19,30 +19,17 @@ import java.util.Arrays;
 import java.util.ArrayList;
 
 class Answer {
-    public static void analyzeNumbers(Integer[] mas) {
-        sort(mas);
-    }
-
-    public static void sort(Integer[] mas) {
-        int count = mas.length, sum = 0, aver = 0;
-        while (count != 0) {
-            count = 0;
-            sum = mas[mas.length - 1];
-            for (int i = 0; i < mas.length - 1; i++) {
-                if (mas[i] > mas[i+1]) {
-                    int pock = mas[i];
-                    mas[i] = mas[i+1];
-                    mas[i+1] = pock;
-                    count++;
-                }
-                sum += mas[i];
-            }
-            aver = sum / mas.length;
-        }
+    public static void analyzeNum(Integer[] mas) {
+        Arrays.sort(mas);
         System.out.println(Arrays.toString(mas));
         System.out.println("Minimum is " + mas[0]);
         System.out.println("Maximum is " + mas[mas.length - 1]);
-        System.out.println("Average is =  " + aver);
+        int sum = 0;
+        for (int i = 0; i < mas.length; i++) {
+            sum += mas[i];
+        }
+        int aver = sum / mas.length;
+        System.out.println("Average is = " + aver);
     }
 }
 
@@ -58,6 +45,6 @@ public class Printer3 {
                     .toArray(Integer[]::new);
         }
         Answer ans = new Answer();
-        ans.analyzeNumbers(arr);
+        ans.analyzeNum(arr);
     }
 }
