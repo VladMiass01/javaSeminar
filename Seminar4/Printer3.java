@@ -19,10 +19,59 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 class Calculator {
-  public int calculate(char op, int a, int b) {
-        // Напишите свое решение ниже
-
-
+    public ArrayDeque<Integer> results = new ArrayDeque<>();
+    public int calculate(char op, int a, int b) {
+        int res = 0;
+        switch (op) {
+            case '+':
+                res = a + b;
+                results.addFirst(res);
+                break;
+            case '-':
+                res = a - b;
+                results.addFirst(res);
+                break;
+            case '/':
+                res = a / b;
+                results.addFirst(res);
+                break;
+            case '*':
+                res = a * b;
+                results.addFirst(res);
+                break;
+            case '<':
+                results.pollFirst();
+                break;
+            default:
+                System.out.println("Некорректный оператор: " + op);
+                break;
+        }
+        return results.getFirst();int res = 0;
+        switch (op) {
+            case '+':
+                res = a + b;
+                results.addFirst(res);
+                break;
+            case '-':
+                res = a - b;
+                results.addFirst(res);
+                break;
+            case '/':
+                res = a / b;
+                results.addFirst(res);
+                break;
+            case '*':
+                res = a * b;
+                results.addFirst(res);
+                break;
+            case '<':
+                results.pollFirst();
+                break;
+            default:
+                System.out.println("Некорректный оператор: " + op);
+                break;
+        }
+        return results.getFirst();
     }
 }
 

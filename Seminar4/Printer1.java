@@ -13,7 +13,11 @@ import java.util.LinkedList;
 
 class LLTasks {
     public static LinkedList<Object> revert(LinkedList<Object> ll) {
-        // Напишите свое решение ниже
+        LinkedList<Object> res = new LinkedList<>();
+        for (Object i : ll) {
+            res.add(0, i);
+        }
+        return res;
     }
 }
 
@@ -25,12 +29,16 @@ public class Printer1 {
             ll.add("One");
             ll.add(2);
             ll.add("Two");
+            ll.add(3);
+            ll.add("Thre");
         } 
         else {
             ll.add(Integer.parseInt(args[0]));
             ll.add(args[1]);
             ll.add(Integer.parseInt(args[2]));
             ll.add(args[3]);
+            ll.add(Integer.parseInt(args[4]));
+            ll.add(args[5]);
         }
         LLTasks answer = new LLTasks();
         System.out.println(ll);

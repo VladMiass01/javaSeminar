@@ -21,26 +21,18 @@ System.out.println(queue.first());
 import java.util.LinkedList;
 
 class MyQueue<T> {
-        // Напишите свое решение ниже
-
-    public void enqueue(T element){
-        // Напишите свое решение ниже
-
+    public LinkedList<T> list = new LinkedList<>();
+    public void enqueue(T element) {
+        list.add(element);
     }
-
-    public T dequeue(){
-        // Напишите свое решение ниже
-
+    public T dequeue() {
+        return list.removeFirst();
     }
-
-    public T first(){
-        // Напишите свое решение ниже
-
+    public T first() {
+        return list.peek();
     }
-
     public LinkedList<T> getElements() {
-        // Напишите свое решение ниже
-
+        return list;
     }
 }
 
