@@ -46,31 +46,6 @@ class Calculator {
                 System.out.println("Некорректный оператор: " + op);
                 break;
         }
-        return results.getFirst();int res = 0;
-        switch (op) {
-            case '+':
-                res = a + b;
-                results.addFirst(res);
-                break;
-            case '-':
-                res = a - b;
-                results.addFirst(res);
-                break;
-            case '/':
-                res = a / b;
-                results.addFirst(res);
-                break;
-            case '*':
-                res = a * b;
-                results.addFirst(res);
-                break;
-            case '<':
-                results.pollFirst();
-                break;
-            default:
-                System.out.println("Некорректный оператор: " + op);
-                break;
-        }
         return results.getFirst();
     }
 }

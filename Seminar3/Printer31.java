@@ -29,6 +29,6 @@ public class Printer31 {
                     .toArray(Integer[]::new);
         }
         Answer ans = new Answer();
-        ans.analyzeNum(arr);
+        ans.analyzeNumbers(arr);
     }
 }
