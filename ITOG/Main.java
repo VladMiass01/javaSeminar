@@ -106,8 +106,8 @@ public class Main {
                 case 5:
 //Печать подходящих
                     for (Notebook notebook: notebooks) {
-                        if ((ozu_cons != 0 && ozu[ozu_cons - 1] != notebook.getVol_OZU()) ||
-                            (hdd_cons != 0 && hdd[hdd_cons - 1] != notebook.getVol_HDD()) ||
+                        if ((ozu_cons != 0 && ozu[ozu_cons - 1] > notebook.getVol_OZU()) ||
+                            (hdd_cons != 0 && hdd[hdd_cons - 1] > notebook.getVol_HDD()) ||
                             (os_cons != 0 && !os[os_cons - 1].equals(notebook.getOper_OS())) ||
                             (col_cons != 0 && !col[col_cons - 1].equals(notebook.getCol_Book()))) continue;
                         String res = notebook.toString();
